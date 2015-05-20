@@ -20,8 +20,10 @@ public class Controller {
 	 */
 	public void startNewInspection(String regNumber) throws InvalidRegNumberException {
 		this.inspection = new Inspection(regNumber);
-		this.garageDoors = new GarageDoors();
-		this.display = new Display();
+		//-------------------------NEW CODE---------------------------------------
+		this.garageDoors = GarageDoors.getGarageDoors();
+		this.display = Display.getDisplay();
+		//------------------------------------------------------------------------
 	}
 
 	/**
