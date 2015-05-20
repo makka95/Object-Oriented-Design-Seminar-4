@@ -52,7 +52,7 @@ public class Startup{
 				controller.startNewInspection(regNumber);
 				done = true;
 			} catch(IllegalArgumentException exc) {
-				System.out.println("Invalid registration number for the vehicle, try again: \n");
+				System.out.println("(IllegalArgumentException thrown!)Invalid registration number for the vehicle, length of regNumber not supported, try again: \n");
 			} 
 			//-------------------------NEW CODE---------------------------------------
 			catch(InvalidRegNumberException exc) {
